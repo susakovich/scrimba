@@ -1,0 +1,116 @@
+body {
+  text-align: center;
+  font-family: "Happy Monkey", cursive;
+  background: linear-gradient(#5612ca, #efb0c9);
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  text-shadow: 1px 1px 1px black;
+}
+
+#baby-img {
+  width: 200px;
+  border-radius: 50%;
+  border: 6px solid #efb0c9;
+  margin-bottom: 10px;
+}
+
+#bday-age {
+  background: #efb0c9;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px 0 10px 0;
+}
+
+#bday-date {
+  margin: 0;
+  background: #efb0c9;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gift-section {
+  margin-top: 50px;
+}
+
+.gift-title {
+  margin-bottom: 10px;
+}
+
+.gift-hint {
+  margin-top: 0;
+}
+
+#gift-img-cheers {
+  height: 200px;
+}
+
+.gift-img {
+  margin: 20px auto;
+  max-width: 400px;
+  height: 400px;
+  border: 6px solid white;
+  border-radius: 10px;
+  background-image: url("images/gift-cover.jpg");
+  background-size: cover;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+#gift-img-happy:hover {
+  background-image: url("https://media1.giphy.com/media/5GoVLqeAOo6PK/giphy.gif?cid=ecf05e47xsn0guda7edrxyh8lh9s7jwtas7pqedysvdzcce7&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+  transition: all 1s ease-in-out;
+}
+
+#gift-img-hot:hover {
+  background-image: url("https://media3.giphy.com/media/5VKbvrjxpVJCM/giphy.gif?cid=ecf05e479bz9jw1omi8agya9vkrdb5t24l799mf7bge9oy6h&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+  transition: all 1s ease-in-out;
+}
+
+#gift-img-genius:hover {
+  background-image: url("https://media3.giphy.com/media/3o6Zt11R527fgtrIJO/giphy.gif?cid=ecf05e47xd3zzestp9absrkya8wevvjxeniq7pt6q8f8vifk&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+  transition: all 1s ease-in-out;
+}
+
+#gift-img-badass:hover {
+  background-image: url("https://media4.giphy.com/media/yoJC2GnSClbPOkV0eA/giphy.gif?cid=ecf05e471kj4547t0yfv46ffuhkxj4tm48euzijoly9xte8l&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+  transition: all 1s ease-in-out;
+}
+
+#gift-img-cheers:hover {
+  background-image: url("https://media3.giphy.com/media/BPJmthQ3YRwD6QqcVD/giphy.gif?cid=ecf05e477cu5ljw2khwud3k7v193rvcecuo6cfdlr2fjehzq&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+  transition: all 1s ease-in-out;
+}
+
+#footer {
+  font-style: italic;
+  width: 400px;
+  margin: 40px auto 20px;
+}
+
+a {
+  color: white;
+}
+
+/* 
+Add the footer paragraph according to the design. 
+Configure the anchor tag to open the link in a new tab.
+Forgotten how to do it? Google it! 
+
+Link: 
+https://scrimba.com/learn/htmlandcss
+
+Text:
+Want to create your own Birthday GIFt site? Take this HTML & CSS course.
+*/
