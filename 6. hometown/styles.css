@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #fdfdfdd6;
+}
+
+img {
+  width: 250px;
+}
+
+#hero {
+  background-image: url("images/hometown.jpeg");
+  background-size: cover;
+  height: 800px;
+  padding: 200px;
+}
+
+#hero-title {
+  width: 450px;
+  margin: 0 auto;
+  background-color: #03a7e37c;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+#hero-info {
+  width: 900px;
+  margin: 20px auto;
+  background-color: #cd4169c4;
+  padding: 10px 15px;
+  border-radius: 10px;
+  line-height: 1.5;
+}
+
+.text-shadow {
+  text-shadow: 0px 0px 3px black;
+}
+
+#main-activities {
+  background-color: #62adefde;
+  padding-top: 60px;
+}
+
+#main-activites-title {
+  font-size: 30px;
+  width: 500px;
+  margin: 0 auto 40px;
+}
+
+.activities {
+  padding: 40px;
+}
+
+.main-activities-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.activities-img {
+  margin-bottom: 40px;
+  border-radius: 40px;
+}
+
+.activities-info {
+  width: 400px;
+  margin-top: 20px;
+  color: black;
+  text-shadow: none;
+}
+
+.guide-wrapper {
+  color: black;
+  width: 600px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+  background-color: #41658fdc;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.682);
+  border-right: 10px solid rgba(0, 0, 0, 0.682);
+  border-radius: 20px;
+}
+
+#guide-img {
+  border-radius: 40px;
+}
+
+.guide-text-wrapper {
+  color: white;
+}
+
+.guide-wrapper-title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.guide-wrapper-info {
+  font-size: 18px;
+  padding: 20px;
+}
+
+.guide-wrapper-name {
+  font-size: 14px;
+}
+.guide-wrapper-name:hover {
+  text-decoration: underline;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
