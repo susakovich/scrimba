@@ -1,10 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-image: url("station.jpg");
+  background-image: url("metro.jpg");
   background-size: cover;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   text-align: center;
+  color: aliceblue;
+}
+
+.container {
+  max-width: 800px;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 100px auto;
+  border-radius: 20px;
+  padding: 30px;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  background-color: #ba517291;
 }
 
 h1 {
@@ -20,19 +38,23 @@ h2 {
 
 button {
   border: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  padding: 15px;
   color: white;
   font-weight: bold;
   width: 200px;
   margin-bottom: 5px;
-  border-radius: 5px;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 #increment-btn {
-  background: darkred;
+  background: rgba(206, 11, 11, 0.711);
 }
 
 #save-btn {
-  background: darkgreen;
+  background: rgba(0, 100, 52, 0.797);
+}
+#save-el {
+  margin-top: 20px;
 }
