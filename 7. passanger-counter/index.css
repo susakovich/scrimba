@@ -16,13 +16,14 @@ body {
 }
 
 .container {
+  border-bottom: 2px solid rgb(239, 235, 235);
+  border-left: 2px solid rgb(239, 235, 235);
   max-width: 800px;
-  border: 1px solid rgb(0, 0, 0);
   margin: 100px auto;
   border-radius: 20px;
   padding: 30px;
   text-shadow: 1px 1px 1px rgb(0, 0, 0);
-  background-color: #ba517291;
+  background-color: #641b227c;
 }
 
 h1 {
@@ -44,16 +45,16 @@ button {
   font-weight: bold;
   width: 200px;
   margin-bottom: 5px;
-  border-radius: 30px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
 #increment-btn {
-  background: rgba(206, 11, 11, 0.711);
+  background: #2e4257;
 }
 
 #save-btn {
-  background: rgba(0, 100, 52, 0.797);
+  background: #cf9031;
 }
 #save-el {
   margin-top: 20px;
