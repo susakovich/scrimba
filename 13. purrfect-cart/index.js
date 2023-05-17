@@ -23,7 +23,9 @@ const shoppingListEl = document.getElementById("shopping-list");
 addButtonEl.addEventListener("click", function () {
   let inputValue = inputFieldEl.value;
 
-  push(shoppingListInDB, inputValue);
+  if (inputValue.trim() !== "") {
+    push(shoppingListInDB, inputValue);
+  }
 
   clearInputFieldEl();
 });
