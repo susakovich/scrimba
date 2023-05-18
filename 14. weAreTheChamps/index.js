@@ -20,9 +20,6 @@ const inputFieldEl = document.getElementById("inputField");
 const publishBtnEl = document.getElementById("publish");
 const endorsementsEl = document.getElementById("endorsments");
 
-const inputFrom = document.getElementById("inputFrom");
-const inpuTo = document.getElementById("inputTo");
-
 publishBtnEl.addEventListener("click", function () {
   let inputValue = inputFieldEl.value;
 
