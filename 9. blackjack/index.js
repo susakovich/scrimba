@@ -2,7 +2,15 @@ let player = {
   name: "Loki",
   chips: 200,
   sayHello: function () {
-    console.log("Heisann!");
+    console.log("Rawrrrr!");
+  },
+  modifyChips: function () {
+    if (hasBlackJack) {
+      this.chips += 10;
+    } else {
+      this.chips -= 5;
+    }
+    playerEl.textContent = `${player.name}:$ ${player.chips}`;
   },
 };
 
@@ -31,6 +39,7 @@ function getRandomCard() {
 
 function startGame() {
   isAlive = true;
+  hasBlackJack = false;
   let firstCard = getRandomCard();
   let secondCard = getRandomCard();
   cards = [firstCard, secondCard];
@@ -50,9 +59,11 @@ function renderGame() {
   } else if (sum === 21) {
     message = "You've got Blackjack!";
     hasBlackJack = true;
+    player.modifyChips();
   } else {
     message = "You're out of the game!";
     isAlive = false;
+    player.modifyChips();
   }
   messageEl.textContent = message;
 }
