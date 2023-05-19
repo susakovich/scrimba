@@ -13,6 +13,7 @@ body {
   font-weight: bold;
   text-align: center;
   color: aliceblue;
+  user-select: none;
 }
 
 .container {
