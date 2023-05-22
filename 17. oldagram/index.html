@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="main__wrapper">
+          <img
+            src="images/logo.png"
+            alt="Logo picture of Oldagram"
+            class="header__logo padding-left"
+          />
+          <img
+            src="images/user-avatar.png"
+            alt="User avatar, profile picture"
+            class="header__user-avatar"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="main__user-post-info padding-left">
+          <img
+            src="images/avatar-vangogh.jpg"
+            alt="Vangogh avatar picture"
+            class="main__user-post-info-avatar"
+          />
+          <div class="main__user-text-wrapper">
+            <h3>Vincent van Gogh</h3>
+            <span class="main__user-post-info-location"
+              >Zudert, Netherlands</span
+            >
+          </div>
+        </div>
+
+        <img
+          src="images/post-vangogh.jpg"
+          alt="Vangogh portrait"
+          class="main__user-post-picture"
+        />
+
+        <div class="main__user-post-btns padding-left">
+          <button id="main__user-post-likeBtn">
+            <img id="love" src="./images/icon-heart.png" alt="Like button" />
+          </button>
+
+          <button id="main__user-post-commentBtn">
+            <img src="./images/icon-comment.png" alt="Post button" />
+          </button>
+
+          <button id="main__user-post-dmBtn">
+            <img src="./images/icon-dm.png" alt="DM button" />
+          </button>
+        </div>
+        <span class="main__user-post-info-likes padding-left"
+          >21,492 likes</span
+        >
+        <p class="main__user-post-info-comment padding-left">
+          <span class="main__user-post-info-name">vincey1853</span> just took a
+          few mushrooms lol
+        </p>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

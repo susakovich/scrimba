@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  user-select: none;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.padding-left {
+  padding-left: 20px;
+}
+
+/* Header styling, logo and user profile picture */
+
+.main__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.header__logo {
+  width: 200px;
+}
+
+.header__user-avatar {
+  margin-right: 20px;
+}
+
+.header__user-avatar,
+.main__user-post-info-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Main content */
+
+main {
+  margin-top: 20px;
+}
+
+.main__user-post-info {
+  display: flex;
+}
+
+.main__user-text-wrapper {
+  margin: 5px 0 0 10px;
+}
+
+.main__user-post-picture {
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* Buttons, likes and commments */
+
+.main__user-post-btns button {
+  border: 0;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.main__user-post-btns img {
+  width: 30px;
+  height: 30px;
+  margin: 10px 20px 10px 0;
+}
+
+.main__user-post-info-likes {
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.main__user-post-info-name {
+  font-weight: 900;
+}
+
+.main__user-post-info-comment {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Posts */
+
+/* .post-wrapper {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.post-wrapper:first-child {
+  margin-top: 0;
+}
+
+.post-wrapper p.main__user-post-info-comment {
+  margin-top: 20px;
+} */
