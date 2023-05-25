@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: whitesmoke;
+  user-select: none;
+  text-align: center;
+  font-family: "Tsukimi Rounded", sans-serif;
+  font-size: 20px;
+  background: url("assets/warcraft.jpeg") no-repeat 0 0 / cover;
+}
+
+/* Typography */
+h1,
+p {
+  color: greenyellow;
+  transition: all ease-in-out 1s;
+}
+
+h1:hover,
+p:hover {
+  color: whitesmoke;
+  transition: all ease-in-out 1s;
+}
+
+span {
+  display: block;
+  margin: 10px 0;
+}
+
+/* Main */
+.container-wrapper {
+  width: 1400px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  gap: 10px;
+  margin-right: 10%;
+}
+
+.right-side {
+  width: 45%;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.input-wrapper input {
+  width: 100%;
+  font-weight: 700;
+}
+.input-wrapper input:focus-visible {
+  background-color: rgba(172, 255, 47, 0.159);
+}
+
+.inputField {
+  padding: 70px;
+  text-align: center;
+  resize: none;
+}
+
+.input-wrapper input {
+  padding: 15px;
+}
+
+.input-wrapper input::placeholder,
+.inputField::placeholder {
+  color: rgba(245, 245, 245, 0.473);
+}
+
+.inputField,
+.input-wrapper input,
+.btnSend,
+.removeAll {
+  background-color: rgba(0, 0, 0, 0.439);
+  border: 1px solid rgba(245, 245, 245, 0.473);
+  color: whitesmoke;
+  transition: all ease-in-out 1s;
+  border-radius: 20px;
+}
+
+a {
+  text-decoration: underline;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.439);
+  padding: 20px;
+  border: 1px solid rgba(245, 245, 245, 0.473);
+  border-radius: 20px;
+}
+
+.btnSend,
+.removeAll {
+  padding: 20px;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btnSend:hover,
+.btnSend:focus,
+.removeAll:hover,
+.removeAll:focus,
+a:hover {
+  background-color: rgba(0, 0, 0, 0.821);
+  color: greenyellow;
+  transition: all ease-in-out 1s;
+}
+
+.container-messages {
+  text-align: left;
+  color: whitesmoke;
+}
+
+h2 {
+  text-align: center;
+}
+
+.message-wrapper {
+  margin-bottom: 10px;
+  border: 1px solid rgba(245, 245, 245, 0.473);
+  padding: 20px;
+  color: greenyellow;
+  word-wrap: break-word;
+  border-radius: 20px;
+}
+
+/* Media Query for tablets */
+@media only screen and (max-width: 768px) {
+  .container-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* Media Query for mobile devices */
+@media only screen and (max-width: 480px) {
+  .container-wrapper {
+    max-width: 80%;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    margin-right: 0;
+  }
+}

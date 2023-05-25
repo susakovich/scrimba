@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Tsukimi+Rounded:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Warcraft</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container-wrapper">
+        <div class="left-side">
+          <h1>Welcome to <span> Warcraft Mailer </span></h1>
+          <p>Send a message to your favorite character.</p>
+
+          <a
+            href="https://wowwiki-archive.fandom.com/wiki/Category:Lore_characters"
+            target="_blank"
+          >
+            List of Characters
+          </a>
+
+          <textarea
+            name=""
+            class="inputField"
+            id="inputField"
+            placeholder="Leave your message here..."
+          ></textarea>
+
+          <div class="input-wrapper">
+            <input type="text" name="" id="inputFrom" placeholder="From" />
+            <input type="text" name="" id="inputTo" placeholder="To" />
+          </div>
+
+          <button id="btnSend" class="btnSend">Send</button>
+          <!-- <button id="removeAll" class="removeAll">Remove All Messages</button> -->
+        </div>
+
+        <div class="right-side">
+          <div class="container-messages">
+            <h2>Warcraft Messages</h2>
+            <div id="messageField" class="messageField"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
