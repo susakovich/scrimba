@@ -144,6 +144,8 @@ a:hover {
 .container-messages {
   text-align: left;
   color: whitesmoke;
+  overflow-y: scroll;
+  max-height: 800px;
 }
 
 .message-wrapper {
