@@ -13,7 +13,7 @@ body {
   user-select: none;
   text-align: center;
   font-family: "Tsukimi Rounded", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   background: url("assets/warcraft.jpeg") no-repeat 0 0 / cover;
 }
 
@@ -35,7 +35,21 @@ span {
   margin: 10px 0;
 }
 
+h2 {
+  text-align: center;
+  transition: all ease-in-out 1s;
+}
+
+h2:hover {
+  color: greenyellow;
+  transition: all ease-in-out 1s;
+}
+
 /* Main */
+
+main {
+  margin-bottom: 200px;
+}
 .container-wrapper {
   width: 1400px;
   margin: 50px auto;
@@ -75,6 +89,10 @@ span {
   resize: none;
 }
 
+.inputField:focus-visible {
+  background-color: rgba(172, 255, 47, 0.159);
+}
+
 .input-wrapper input {
   padding: 15px;
 }
@@ -102,6 +120,7 @@ a {
   padding: 20px;
   border: 1px solid rgba(245, 245, 245, 0.473);
   border-radius: 20px;
+  transition: all ease-in-out 1s;
 }
 
 .btnSend,
@@ -127,17 +146,37 @@ a:hover {
   color: whitesmoke;
 }
 
-h2 {
-  text-align: center;
-}
-
 .message-wrapper {
   margin-bottom: 10px;
-  border: 1px solid rgba(245, 245, 245, 0.473);
+  border: 1px solid rgba(172, 255, 47, 0.501);
+  background-color: #1e1e1e94;
   padding: 20px;
-  color: greenyellow;
+  color: rgba(245, 245, 245, 0.693);
   word-wrap: break-word;
   border-radius: 20px;
+  transition: all ease-in-out 1s;
+}
+
+.message-wrapper:hover {
+  background-color: rgba(0, 0, 0, 0.821);
+  color: yellowgreen;
+  cursor: pointer;
+}
+
+.toSpan,
+.fromSpan {
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  border: 0;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgba(172, 255, 47, 0.771);
+  border-bottom: 1px solid #fff;
+  padding: 10px 15px;
 }
 
 /* Media Query for tablets */
