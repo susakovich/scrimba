@@ -81,12 +81,14 @@ function appendToMessageField(msg) {
   messageWrapper.classList.add("message-wrapper");
 
   let fromSpan = document.createElement("span");
+  fromSpan.classList.add("fromSpan");
   fromSpan.textContent = "From: " + fromValue;
 
   let newDiv = document.createElement("div");
   newDiv.textContent = contentValue;
 
   let toSpan = document.createElement("span");
+  toSpan.classList.add("toSpan");
   toSpan.textContent = "To: " + toValue;
 
   messageWrapper.appendChild(fromSpan);
