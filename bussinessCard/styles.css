@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+  background-color: #1e1e1e;
+  text-align: center;
+}
+
+/* Typography */
+h1 {
+  color: #1e1e1e;
+  margin-top: 0;
+  padding-top: 30px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+h4 {
+  text-align: left;
+}
+
+.interests {
+  margin-top: 20px;
+}
+
+p {
+  font-size: 11.5px;
+  text-align: left;
+  margin-top: 10px;
+  line-height: 150%;
+}
+
+span {
+  display: block;
+}
+
+.frontend {
+  color: royalblue;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.portfolio a {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  color: #1e1e1e;
+  font-size: 12px;
+  transition: all ease-in-out 0.5s;
+  background-color: transparent;
+  font-weight: 500;
+}
+
+.portfolio a:hover {
+  color: royalblue;
+  transition: all ease-in-out 0.5s;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  width: 350px;
+}
+
+.avatar {
+  width: 350px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-info {
+  background-color: whitesmoke;
+}
+
+/* Buttons */
+a {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 10px 10px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #d5d4d86e;
+  transition: all ease-in-out 0.5s;
+}
+
+.email {
+  text-decoration: none;
+  color: #1e1e1e;
+}
+
+.email:hover {
+  background-color: #d5d4d8;
+  transition: all ease-in-out 0.5s;
+}
+
+.linkedin {
+  text-decoration: none;
+  background-color: royalblue;
+  color: whitesmoke;
+}
+
+.linkedin:hover {
+  background-color: rgb(35, 73, 189);
+}
+
+i {
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.emptyLine {
+  height: 1px;
+  background-color: #1e1e1e2a;
+  margin: 5px 45px;
+}
+
+/* About */
+
+.card-about {
+  margin: 30px 45px;
+}
+
+.card-info {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Socials */
+
+.socials {
+  background-color: #bbbabf;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.socials i {
+  font-size: 22px;
+  transition: all ease-in-out 0.5s;
+}
+
+.socials a {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.socials a:hover .fa-twitter,
+.socials a:hover .fa-github,
+.socials a:hover .fa-medium {
+  color: royalblue !important;
+  transition: all ease-in-out 0.5s;
+}
