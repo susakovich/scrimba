@@ -7,9 +7,13 @@ let guestCount = 0;
 
 function updateWinner() {
   if (homeCount > guestCount) {
-    winner.textContent = `The Home is leading!`;
+    winner.textContent = `The Home is leading by ${
+      homeCount - guestCount
+    } points!`;
   } else if (homeCount < guestCount) {
-    winner.textContent = "The Guest is leading!";
+    winner.textContent = `The Guest is leading by ${
+      guestCount - homeCount
+    } points!`;
   } else {
     winner.textContent = "It's a tie!";
   }
