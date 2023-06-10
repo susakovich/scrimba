@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  user-select: none;
+  color: #1e1e1e;
+  background-color: whitesmoke;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+
+.modal-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Main */
+
+main {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 20px 0;
+}
+
+li {
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.li-lime {
+  background-color: rgba(50, 205, 50, 0.467);
+}
+.li-yellow {
+  background-color: rgba(255, 255, 0, 0.493);
+}
+.li-blue {
+  background-color: rgba(135, 207, 235, 0.432);
+}
+.li-purple {
+  background-color: rgba(128, 0, 128, 0.3);
+}
+
+img {
+  width: 100%;
+  margin: 30px 0;
+  border-radius: 10px;
+}
+
+/* Modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #1e1e1e;
+  color: whitesmoke;
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 4px 2px gold;
+}
+
+.modal-button-container {
+  text-align: right;
+  margin: 10px;
+}
+
+.modal-close-btn {
+  font-size: 22px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: whitesmoke;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:active {
+  color: red;
+  cursor: pointer;
+}
+
+.modal-close-btn:disabled {
+  color: whitesmoke;
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px 0;
+}
+
+.modal-choice-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-choice-btns button {
+  padding: 10px 15px;
+  margin: 10px 1px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+#upload-text {
+  margin: 0 0 20px 0;
+}
+
+.loading {
+  margin-bottom: 0;
+}
+
+.modal-display-name {
+  color: yellow;
+}
+
+.idiot-gif {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.idiot-gif img {
+  box-shadow: 1px 1px 3px #999;
+  border-radius: 5px;
+}
+
+.modal-inner p {
+  margin: 0;
+}
