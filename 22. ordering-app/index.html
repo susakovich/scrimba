@@ -1,9 +1,80 @@
-<html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-       <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-	<script src="index.js"></script>
-    </body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css" />
+    <title>Danny's Ordering App</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header  -->
 
+      <header>
+        <div class="heading">
+          <h1>Dannys's Garrison</h1>
+          <h3>The best burgers and pizzas in town.</h3>
+        </div>
+      </header>
+
+      <!-- Items Menu  -->
+
+      <section id="items-menu"></section>
+
+      <!--  Checkout Section  -->
+      <section class="item-cart" id="item-cart"></section>
+
+      <!-- Order Confirmation -->
+      <section id="order-confirmed"></section>
+
+      <!--  Input Form for Payement -->
+
+      <div class="modal" id="modal">
+        <div class="modal-inner" id="modal-inner">
+          <h2 class="modal-heading">Enter Card Details</h2>
+          <form id="payment-form" class="payment-input">
+            <input
+              id="full-name-value"
+              type="text"
+              name="Name"
+              placeholder="Enter your name"
+              required
+            />
+            <input
+              type="text"
+              name="cardNumber"
+              placeholder="Enter your Card Number"
+              maxlength="10"
+              required
+            />
+            <input
+              type="text"
+              name="CVV"
+              placeholder="Enter CVV"
+              maxlength="3"
+              required
+            />
+            <div class="modal-choice-btns" id="modal-choice-btns">
+              <button type="submit" class="modal-btn">Pay</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
