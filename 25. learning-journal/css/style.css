@@ -1,0 +1,336 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+body {
+  color: #1e1e1e;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 p {
+  margin: 0;
+}
+
+header h1 {
+  font-size: 0.8rem;
+}
+
+/* Header */
+
+header {
+  padding: 1em;
+}
+
+.logo {
+  width: 20px;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+}
+
+nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  gap: 1em;
+  font-size: 0.8rem;
+}
+
+.nav-links a {
+  color: #1e1e1e;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Main */
+
+.hero {
+  background-image: url("../images/article-image-hero.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+  color: #fff;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  line-height: 1.5;
+}
+
+.hero span,
+.main-wrapper span {
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+  font-size: 0.7rem;
+}
+
+.hero h2,
+.main-wrapper h2 {
+  max-width: 250px;
+  font-size: 1.4rem;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 0.8rem;
+}
+
+main a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* BLOG */
+
+.blog {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, max(30em)), 1fr));
+  padding: 1em;
+  gap: 2.5em;
+}
+
+.blog img {
+  display: block;
+  border-radius: 0.5em;
+  margin: 1em 0;
+  width: 100%;
+}
+
+.blog span {
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+  display: inline-block;
+}
+
+.blog h2 {
+  margin-bottom: 0.5em;
+}
+
+.blog p {
+  max-width: 100%;
+}
+
+.view-more {
+  text-align: center;
+  padding: 3em 0;
+}
+
+.view-more-link {
+  color: #1e1e1ed5;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+footer {
+  text-align: center;
+  padding: 2em 0;
+  background-color: #1e1e1e;
+  color: whitesmoke;
+}
+
+footer h5 {
+  margin-bottom: 0.5em;
+}
+
+footer p {
+  font-size: 0.8rem;
+  color: #ffffffa1;
+}
+
+/* My Story */
+
+.main-wrapper {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.main-wrapper h1 {
+  margin: 0.5em 0;
+  font-size: 1.8rem;
+}
+
+.main-wrapper p {
+  line-height: 1.5;
+}
+
+.main-wrapper-img {
+  margin: 2em 0;
+}
+
+.main-wrapper h4 {
+  margin: 1em 0;
+}
+
+.recent-posts {
+  text-align: center;
+  margin: 2em 0 0 0;
+}
+
+/* About Me */
+
+.avatar {
+  border-radius: 50%;
+  width: 200px;
+  margin-top: 2em;
+}
+
+.aboutMe {
+  background-color: whitesmoke;
+  padding: 1em;
+}
+
+.aboutMe h1 {
+  font-size: 1.5rem;
+  max-width: 250px;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+.aboutMe p {
+  margin: 1em 0;
+}
+
+/* Media */
+
+@media (min-width: 769px) {
+  /* Header */
+  header {
+    padding: 3em;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    width: 30px;
+  }
+
+  .nav-links {
+    gap: 2em;
+    font-size: 1.125rem;
+  }
+
+  /* Hero */
+
+  .hero {
+    background-image: url("https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1447&q=80");
+    min-height: 900px;
+    padding: 3em;
+  }
+
+  .hero span,
+  .main-wrapper span {
+    font-size: 1rem;
+  }
+
+  .hero h2,
+  .main-wrapper h2 {
+    max-width: 100%;
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 900px;
+    margin-bottom: 4em;
+  }
+
+  /* BLOG */
+
+  .blog {
+    padding: 3em;
+  }
+
+  .view-more-link {
+    font-size: 1.25rem;
+  }
+
+  footer h5 {
+    font-size: 1.25rem;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+
+  /* My Story */
+
+  .main-wrapper {
+    padding: 3em;
+  }
+
+  .main-wrapper h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-wrapper p {
+    font-size: 1.125rem;
+  }
+
+  .main-wrapper h4 {
+    font-size: 1.5rem;
+  }
+
+  .recent-posts {
+    font-size: 1.5rem;
+    margin: 3em 0 0 0;
+  }
+
+  /* About Me */
+
+  .avatar {
+    border-radius: 50%;
+    width: 300px;
+    margin-top: 2em;
+  }
+
+  .aboutMe {
+    padding: 1em;
+  }
+
+  .aboutMe-info {
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    gap: 3em;
+  }
+
+  .text-container h1 {
+    font-size: 2rem;
+    max-width: 100%;
+  }
+
+  .text-container p {
+    max-width: 80%;
+  }
+
+  .aboutMe-started {
+    padding: 2em 0 0 8em;
+    max-width: 80%;
+  }
+
+  .aboutMe-started h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1em;
+  }
+}
