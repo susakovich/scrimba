@@ -7,12 +7,18 @@
 }
 
 body {
-  background-color: #481c74;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    100deg,
+    rgba(2, 0, 36, 1) 25%,
+    rgba(102, 51, 153, 1) 60%,
+    rgba(65, 105, 225, 1) 100%
+  );
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 100vh;
   color: #ccc;
   font-family: "Raleway", sans-serif;
 }
@@ -38,11 +44,13 @@ button {
   background-color: #1e1e1e;
   color: #ccc;
   border-radius: 10px;
-  transition: all 0.3s ease-in-out;
+  font-weight: 700;
+  transition: all 0.5s ease-in-out;
 }
 button:hover {
-  background-color: #a8a8a8;
-  color: #481c74;
+  background-color: #ccc;
+  color: rgba(102, 51, 153);
+  font-weight: 700;
 }
 
 .bored-text {
