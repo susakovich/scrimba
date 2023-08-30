@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>InfiniteVerse</title>
+  </head>
+  <body>
+    <nav>
+      <h1>InfiniteVerse</h1>
+    </nav>
+    <form>
+      <label for="post-title">Title:</label>
+      <input
+        class="title"
+        type="text"
+        name="post-title"
+        id="post-title"
+        placeholder="My first coding language..."
+      />
+
+      <label for="post-body">Body:</label>
+      <textarea
+        name="post-body"
+        id="post-body"
+        placeholder="Write your post"
+      ></textarea>
+      <button id="post-btn">Post</button>
+    </form>
+    <div class="blog-list" id="blog-list"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
