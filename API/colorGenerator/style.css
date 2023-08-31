@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    148deg,
+    rgba(2, 0, 36, 1) 35%,
+    rgba(102, 51, 153, 1) 100%
+  );
+  color: whitesmoke;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 550px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+p {
+  margin-bottom: 50px;
+}
+
+.color-wrapper {
+  display: flex;
+  height: 90px;
+  width: 550px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fffdfe;
+}
+
+input[type="color"] {
+  width: 51px;
+  height: 42px;
+}
+
+select {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 0 10px;
+  width: 312px;
+  height: 42px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+.color-btn {
+  width: 123px;
+  height: 42px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #fffdfe;
+  cursor: pointer;
+}
+
+.result-color {
+  width: 110px;
+  height: 450px;
+  display: flex;
+}
+
+.result-name {
+  display: flex;
+  text-align: center;
+}
+
+.display-color {
+  display: flex;
+}
+
+.display-name {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  background-color: #fffdfe;
+  color: #1e1e1e;
+}
