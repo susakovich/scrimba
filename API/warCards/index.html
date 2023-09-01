@@ -8,12 +8,18 @@
   </head>
   <body>
     <div class="container">
-      <button class="new-deck-btn" id="new-deck-btn">Shuffle Deck!</button>
-      <h2 id="winner">Game of WAR</h2>
+      <div class="top-btns-wrapper btn-container">
+        <button class="new-deck-btn" id="new-deck-btn">Shuffle Deck!</button>
+        <p class="cards-remaining" id="cards-remaining">Cards Remaining:</p>
+        <button class="reset-btn" id="reset-btn">Reset Game!</button>
+      </div>
+      <h1 id="winner">Card Wars: Battle Royale</h1>
       <h3 id="computer-score">Computer score: 0</h3>
       <div class="cards" id="cards"></div>
       <h3 id="player-score">Player score: 0</h3>
-      <button class="two-cards-btn" id="two-cards-btn">Draw Cards!</button>
+      <div class="bottom-btn-wrapper">
+        <button class="two-cards-btn" id="two-cards-btn">Draw Cards!</button>
+      </div>
     </div>
     <script src="main.js"></script>
   </body>
