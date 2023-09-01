@@ -15,42 +15,61 @@ body {
 
   color: whitesmoke;
 }
-h2 {
-  color: rgb(240, 210, 77);
+h1 {
+  font-size: 34px;
 }
-
+h3 {
+  font-size: 24px;
+}
 .container {
-  max-width: 600px;
-  border-right: 1px solid rgb(240, 210, 77);
-  border-left: 1px solid rgb(240, 210, 77);
+  max-width: 800px;
   margin: 0 auto;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: center;
+}
+
+.top-btns-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 button {
   font-family: "Crete Round", serif;
-  font-size: 18px;
-  padding: 10px;
+  font-size: 16px;
+  padding: 15px 45px;
   border: 0;
-  text-transform: uppercase;
-  background-color: rgb(255, 220, 62);
+  background-color: whitesmoke;
   font-weight: bold;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border-radius: 6px;
 }
 button:hover {
-  background-color: rgb(177, 153, 44);
+  background-color: rgb(104, 38, 154);
   color: whitesmoke;
+}
+.two-cards-btn {
+  font-size: 20px;
+  width: 100%;
+}
+
+.cards-remaining {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(192, 113, 253);
+  padding: 15px;
+  border-radius: 6px;
 }
 
 .cards {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+  gap: 20px;
 }
 
 .cards-wrapper {
@@ -66,11 +85,6 @@ button:hover {
 .card {
   width: 200px;
   height: 280px;
-}
-
-.remaining-cards {
-  color: rgb(255, 220, 62);
-  font-weight: bold;
 }
 
 .disabled {
