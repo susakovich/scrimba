@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    to bottom,
+    #05061e,
+    #250146
+  ); /* Dark blue to dark purple gradient */
+
+  color: whitesmoke;
+}
+h2 {
+  color: rgb(240, 210, 77);
+}
+
+.container {
+  max-width: 600px;
+  border-right: 1px solid rgb(240, 210, 77);
+  border-left: 1px solid rgb(240, 210, 77);
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+button {
+  font-family: "Crete Round", serif;
+  font-size: 18px;
+  padding: 10px;
+  border: 0;
+  text-transform: uppercase;
+  background-color: rgb(255, 220, 62);
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(177, 153, 44);
+  color: whitesmoke;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cards-wrapper p {
+  margin-bottom: 10px;
+}
+
+.card {
+  width: 200px;
+  height: 280px;
+}
+
+.remaining-cards {
+  color: rgb(255, 220, 62);
+  font-weight: bold;
+}
+
+.disabled {
+  background-color: #ccc;
+  color: #999;
+  cursor: not-allowed;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Media queries for tablets */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .cards {
+    gap: 20px;
+  }
+
+  .card {
+    width: 150px;
+    height: 220px;
+  }
+}
+
+/* Media queries for mobiles */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .cards {
+    gap: 10px;
+  }
+
+  .card {
+    width: 120px;
+    height: 180px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
