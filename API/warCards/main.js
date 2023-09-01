@@ -36,7 +36,7 @@ document.getElementById("new-deck-btn").addEventListener("click", handleClick);
 async function twoNewCards() {
   let url = `https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=2`;
   if (!deckId) {
-    alert("You first need to get deck, so click that button left from me.");
+    alert("You first need to shuffle deck, so click on Shuffle Deck button.");
   }
 
   const res = await fetch(url);
