@@ -115,14 +115,54 @@ button:hover {
   }
 }
 
+/* Media queries for tablets */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
+
 /* Media queries for mobiles */
 @media screen and (max-width: 480px) {
   body {
     font-size: 14px;
   }
 
+  .cards-remaining {
+    order: 3;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
   .container {
     padding: 10px;
+  }
+
+  .top-btns-wrapper {
+    flex-direction: column;
+  }
+
+  .top-btns-wrapper button {
+    margin-bottom: 10px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+
+  .two-cards-btn {
+    font-size: 16px;
   }
 
   .cards {
@@ -134,7 +174,8 @@ button:hover {
     height: 180px;
   }
 
-  button {
-    font-size: 14px;
+  .cards-remaining {
+    font-size: 16px;
+    padding: 10px;
   }
 }
