@@ -4,8 +4,22 @@ const winner = document.getElementById("winner");
 const drawCards = document.getElementById("two-cards-btn");
 const computerScoreEl = document.getElementById("computer-score");
 const playerScoreEl = document.getElementById("player-score");
+const remainingCards = document.getElementById("cards-remaining");
+const resetBtn = document.getElementById("reset-btn");
 let computerScore = 0;
 let playerScore = 0;
+
+const resetGame = () => {
+  remainingCards.textContent = "Cards Remaining:";
+  winner.textContent = "Game of WAR";
+  computerScoreEl.textContent = `Computer score: 0`;
+  computerScore = 0;
+  playerScoreEl.textContent = `Player score: 0`;
+  playerScore = 0;
+  cards.innerHTML = "";
+  drawCards.classList.remove("disabled");
+};
+resetBtn.addEventListener("click", resetGame);
 
 async function handleClick() {
   let url = "https://www.deckofcardsapi.com/api/deck/new/shuffle";
@@ -13,9 +27,7 @@ async function handleClick() {
   const res = await fetch(url);
   const data = await res.json();
   console.log(data);
-  cards.innerHTML = `
-      <p>Remaining cards:${data.remaining}</p>
-    `;
+  remainingCards.textContent = `Cards Remaining: ${data.remaining}`;
   deckId = data.deck_id;
 }
 
@@ -34,13 +46,12 @@ async function twoNewCards() {
         <div class="computer-card">
           <img class="card" src="${data.cards[0].image}">
         </div>
-        <p class="remaining-cards">Remaining cards: ${data.remaining}</p>
         <div class="player-card">  
           <img class="card" src="${data.cards[1].image}">
         </div>
       </div>
     `;
-
+  remainingCards.textContent = `Remaining cards: ${data.remaining}`;
   const winnerText = determineCardWinner(data.cards[0], data.cards[1]);
   winner.textContent = winnerText;
 
