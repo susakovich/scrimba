@@ -75,7 +75,7 @@ button:hover {
 .cards-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 .cards-wrapper p {
@@ -101,28 +101,21 @@ button:hover {
     font-size: 16px;
   }
 
+  h1 {
+    font-size: 22px;
+  }
+
   .container {
     padding: 20px;
   }
 
-  .cards {
+  .cards-wrapper {
     gap: 20px;
   }
 
   .card {
     width: 150px;
     height: 220px;
-  }
-}
-
-/* Media queries for tablets */
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-
-  h1 {
-    font-size: 28px;
   }
 }
 
@@ -137,15 +130,17 @@ button:hover {
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .container {
     padding: 10px;
+    justify-content: flex-start;
+    gap: 20px;
   }
 
   .top-btns-wrapper {
@@ -165,8 +160,8 @@ button:hover {
     font-size: 16px;
   }
 
-  .cards {
-    gap: 10px;
+  .cards-wrapper {
+    gap: 5px;
   }
 
   .card {
