@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1c1c1c;
+  font-family: "Inter", sans-serif;
+  color: whitesmoke;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 2.625rem;
+  font-weight: 800;
+}
+
+h3 {
+  color: #dfdddd;
+  font-size: 1.125rem;
+  margin-bottom: 1em;
+}
+
+.container {
+  max-width: 550px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+header {
+  background: url(assets/movie.jpg) center/cover;
+  min-height: 208px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5em 2.8125em;
+}
+
+header a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+/* Form */
+
+.find-movie {
+  text-align: center;
+  margin-top: -1.25em;
+}
+
+.search-input {
+  border-radius: 6px;
+  padding: 0.625em 1.25em;
+  width: 70%;
+  border: solid #ccc;
+}
+
+.search-btn {
+  border-top-right-radius: 0.375em;
+  border-bottom-right-radius: 0.375em;
+  padding: 0.625em 1.25em;
+  margin-left: -0.625em;
+  border: solid #ccc;
+  cursor: pointer;
+}
+
+.movies-render {
+  background: url(assets/no-data-initial.png) center/30% no-repeat white;
+  margin-top: -1.25em;
+}
+
+/* Watchlist Page */
+.movies-watchlist {
+  background-color: white;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-sign {
+  width: 18px;
+  margin-bottom: -0.25em;
+  margin-right: 0.438em;
+}
+
+.add-movie {
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+  font-size: 0.875rem;
+}
+
+.movie-item {
+  display: flex;
+  padding: 50px 45px;
+  border-bottom: 2px solid #e5e7eb;
+  gap: 40px;
+}
+
+.movie-item h3,
+p {
+  color: black;
+}
+
+.movie-item img {
+  width: 150px;
+}
