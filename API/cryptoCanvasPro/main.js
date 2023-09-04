@@ -132,3 +132,34 @@ async function getWeather() {
 }
 
 getWeather();
+
+// Facts Fetching
+
+async function getAdvice() {
+  const url = "https://api.adviceslip.com/advice";
+
+  const res = await fetch(url);
+  const data = await res.json();
+  console.log(data);
+
+  const advice = document.getElementById("advice");
+  advice.textContent = `Advice: ${data.slip.advice}`;
+}
+getAdvice();
+setInterval(getAdvice, 20000);
+
+// Quotes
+
+async function getQuote() {
+  const url = "https://api.chucknorris.io/jokes/random";
+
+  const res = await fetch(url);
+  const data = await res.json();
+
+  console.log("Facts", data);
+
+  const facts = document.getElementById("facts");
+  facts.textContent = `${data.value}`;
+}
+getQuote();
+setInterval(getQuote, 20000);
