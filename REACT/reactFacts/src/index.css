@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #282d35;
+}
+
+.container {
+  max-width: 700px;
+  background-image: url(react.png);
+  background-repeat: no-repeat;
+  background-position: right 75%;
+  background-color: #282d35;
+  border-right: 1px solid #21222a;
+  border-bottom: 1px solid #21222a;
+  box-shadow: 0 0 0.625em #61dafb;
+}
+/* Navbar */
+nav {
+  display: flex;
+  padding: 1.875em 1.563em;
+  height: 90px;
+  align-items: center;
+  background-color: #21222a;
+}
+
+.logo {
+  margin-right: 0.625em;
+}
+
+.logo-name {
+  color: #61dafb;
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+
+.react-course {
+  color: #deebf8;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: auto;
+}
+/* Main */
+main {
+  padding: 3.75em 1.563em;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.5em;
+  letter-spacing: -0.05em;
+}
+
+.fact-list {
+  margin: 2.813em 0 0 3.125em;
+  max-width: 400px;
+}
+
+.fact-list > li {
+  line-height: 1.25em;
+  padding-block: 0.625em;
+}
+
+.fact-list li::marker {
+  font-size: 1.4rem;
+  color: #61dafb;
+}
